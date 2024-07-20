@@ -4,6 +4,7 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import { initializeApp } from 'firebase/app';
 import { firebaseConfig } from '../config/firebase-config';
+import AppLogo from '../../assets/gente.png';
 
 export default function SingUp({ navigation }) {
   const [email, setEmail] = useState('');
@@ -40,9 +41,7 @@ export default function SingUp({ navigation }) {
               alt="App Logo"
               resizeMode="contain"
               style={styles.headerImg}
-              source={{
-                uri: 'https://cdn-icons-png.flaticon.com/512/138/138659.png',
-              }}
+              source={AppLogo}
             />
             <Text style={styles.title}>
               Regístro <Text style={{ color: '#075eec' }}></Text>
@@ -60,7 +59,7 @@ export default function SingUp({ navigation }) {
                 clearButtonMode="while-editing"
                 keyboardType="email-address"
                 onChangeText={text => setEmail(text)}
-                placeholder="juan@ejemplo.com"
+                placeholder="thats@ejemplo.com"
                 placeholderTextColor="#6b7280"
                 style={styles.inputControl}
               />

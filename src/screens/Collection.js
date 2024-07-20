@@ -35,6 +35,7 @@ const Collection = () => {
 
     return (
         <View style={styles.container}>
+            <Text style={styles.headerText}>Mire profe una pantalla sorpresa</Text>
             <FlatList
                 data={DATA}
                 renderItem={renderItem}
@@ -48,6 +49,12 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#fff',
+    },
+    headerText: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        marginVertical: 20,
     },
     card: {
         margin: 15,
