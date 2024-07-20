@@ -1,7 +1,7 @@
 ﻿# Trabajito-firebase
 Integrantes: Hazel Nicole García Hernández, Fernando Andree González Melendez
 - Este proyecto fue hecho con React Native usando firebase para hacer el login, registro y un crud de productos.
-  #Dependencias que se utilizaron
+# Dependencias que se utilizaron
 -npm install expo-constants
 -npm install react-native-dotenv
 -npm install react-native-gesture-handler
